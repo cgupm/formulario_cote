@@ -1,0 +1,50 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath}    % need for subequations
+\usepackage{hyperref}   % use for hypertext links, including those to external documents and URLs
+\usepackage{esint}
+\usepackage{amsfonts}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{amsfonts}
+\usepackage{fullpage}
+\usepackage[spanish]{babel}
+
+
+\title{Formulario de COTE - ETSIT UPM}
+\author{Carlos García-Mauriño}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\twocolumn
+
+\section{Ondas Planas Homogéneas}
+\label{sec:ondas_planas_homogeneas}
+
+\[ \lambda = \frac{2 \pi}{\beta}; \quad v_f = \frac{\omega_0}{\beta}  =
+\frac{1}{\sqrt{\mu \varepsilon}} \]
+
+\[ \gamma_0 = \sqrt{-\omega^2 \mu \varepsilon} = \alpha + j \beta \]
+
+\[ \frac{\hat{n} \times \vec{E_0}}{\eta} \]
+
+\[ \eta = \frac{j \omega \mu}{\gamma_0} = \sqrt{\frac{\mu}{\varepsilon}} \]
+
+\subsection{Poynting}
+\label{sub:poynting}
+
+Vector de Poynting instantáneo:
+
+\[ \vec{S} ( \vec{r}, t ) = \vec{E} ( \vec{r}, t ) \times \vec{H} ( \vec{r}, t
+) \]
+
+Valor medio:
+
+\[ \left< \vec{S} ( \vec{r}, t ) \right> = \frac{1}{2} \vec{E_0} \vec{E_0^*}
+\operatorname{Re}\left( \frac{1}{\eta^*} \right) e^{-2 \alpha z} \hat{z} = 
+\frac{1}{2} \vec{H_0} \vec{H_0^*} \operatorname{Re}\left( \eta^* \right) e^{-2 \alpha z} \hat{z} \]
+
+
+\end{document}
