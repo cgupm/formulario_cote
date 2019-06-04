@@ -42,9 +42,23 @@ Vector de Poynting instantáneo:
 
 Valor medio:
 
-\[ \left< \vec{S} ( \vec{r}, t ) \right> = \frac{1}{2} \vec{E_0} \vec{E_0^*}
-\operatorname{Re}\left( \frac{1}{\eta^*} \right) e^{-2 \alpha z} \hat{z} = \]
-\[ = \frac{1}{2} \vec{H_0} \vec{H_0^*} \operatorname{Re}\left( \eta^* \right) e^{-2 \alpha z} \hat{z} \]
+\[ \left< \vec{S} ( \vec{r}, t ) \right> \]
+\[ = \frac{1}{2} \operatorname{Re}\left\{ \vec{E}( \vec{r}, \omega_0 ) \times
+\vec{H^*} ( \vec{r}, \omega_0)  \right\} \]
+\[ = \frac{1}{2} \vec{E_0} \vec{E_0^*} \operatorname{Re}\left( \frac{1}{\eta^*}
+\right) e^{-2 \alpha z} \hat{z} \]
+\[ = \frac{1}{2} \vec{H_0} \vec{H_0^*} \operatorname{Re}\left( \eta^* \right)
+e^{-2 \alpha z} \hat{z} \]
+
+En el dominio de la frecuencia:
+
+\[ \frac{1}{2} \operatorname{Re}\left\{ \int_V - \vec{J_{c}^*} \cdot
+\vec{E_c} \cdot dV \right\} = \]
+\[ = \frac{1}{2} \operatorname{Re}\left\{ \oint_S \left(\vec{E_{c}} \cdot
+\vec{H_c^*} \right) \vec{dS} \right\} \] 
+\[ + \frac{\omega_0 \varepsilon^{\prime\prime}}{2} \int_V | \vec{E_c} |^2 dV \]
+\[ + \frac{\omega_0 \mu^{\prime\prime}}{2} \int_V | \vec{H_c} |^2 dV \]
+\[ + \frac{\sigma}{2} \int_V | \vec{E_c} |^2 dV \]
 
 \subsection{Campo Máximo}
 \label{sub:campo_maximo}
