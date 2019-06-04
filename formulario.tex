@@ -20,7 +20,7 @@
 
 \twocolumn
 
-\section{Ondas Planas Homogéneas}
+\section{OPH}
 \label{sec:ondas_planas_homogeneas}
 
 \[ \lambda = \frac{2 \pi}{\beta}; \quad v_f = \frac{\omega_0}{\beta}  =
@@ -43,13 +43,40 @@ Vector de Poynting instantáneo:
 Valor medio:
 
 \[ \left< \vec{S} ( \vec{r}, t ) \right> = \frac{1}{2} \vec{E_0} \vec{E_0^*}
-\operatorname{Re}\left( \frac{1}{\eta^*} \right) e^{-2 \alpha z} \hat{z} = 
-\frac{1}{2} \vec{H_0} \vec{H_0^*} \operatorname{Re}\left( \eta^* \right) e^{-2 \alpha z} \hat{z} \]
+\operatorname{Re}\left( \frac{1}{\eta^*} \right) e^{-2 \alpha z} \hat{z} = \]
+\[ = \frac{1}{2} \vec{H_0} \vec{H_0^*} \operatorname{Re}\left( \eta^* \right) e^{-2 \alpha z} \hat{z} \]
 
 \subsection{Campo Máximo}
 \label{sub:campo_maximo}
 
 \[ \max{\left(|E_r|, |E_i|\right)} \]
+
+\subsection{Polarización}
+\label{sub:polarizacion}
+
+\begin{itemize}
+		\item \textbf{Lineal} si:
+				$ E_{u1} $ ó $ E_{u2} \, = \, 0$.
+		\item \textbf{Circular} si:
+				$ E_{u1} = E_{u2} $ 
+		\item \textbf{Elíptica}:
+				En el resto de situaciones.
+\end{itemize}
+
+\subsubsection{Relación axial}
+\label{ssub:relacion_axial}
+
+\[ r = \frac{E_{semieje mayor}}{E_{semieje menor}} \] 
+
+\subsubsection{Sentido de polarización}
+\label{ssub:sentido_de_polarizacion}
+
+Mirando en la dirección de propagación, la polarización será:
+
+\[ \hat{n} \cdot \left( \vec{E_r} \times \vec{E_i} \right) \geq 0
+\rightarrow \mbox{negativa}. \]
+\[ \hat{n} \cdot \left( \vec{E_r} \times \vec{E_i} \right) \leq 0
+\rightarrow \mbox{positiva}. \]
 
 
 \end{document}
