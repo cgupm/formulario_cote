@@ -23,8 +23,12 @@
 \section{OPH}
 \label{sec:ondas_planas_homogeneas}
 
+Condición: $ \vec{E} \cdot \hat{n} = 0 $ y $ \vec{H} \cdot \hat{n} = 0 $.
+
 \[ \lambda = \frac{2 \pi}{\beta}; \quad v_f = \frac{\omega_0}{\beta}  =
 \frac{1}{\sqrt{\mu \varepsilon}} \]
+
+\[ c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}} \]
 
 \[ \gamma_0 = \sqrt{-\omega^2 \mu \varepsilon} = \alpha + j \beta \]
 
@@ -35,12 +39,15 @@
 \subsection{Poynting}
 \label{sub:poynting}
 
-Vector de Poynting instantáneo:
+\subsubsection{Vector de Poynting instantáneo}
+\label{ssub:vector_de_poynting_instantaneo}
+
 
 \[ \vec{S} ( \vec{r}, t ) = \vec{E} ( \vec{r}, t ) \times \vec{H} ( \vec{r}, t
 ) \]
 
-Valor medio:
+\subsubsection{Valor medio}
+\label{ssub:valor_medio}
 
 \[ \left< \vec{S} ( \vec{r}, t ) \right> \]
 \[ = \frac{1}{2} \operatorname{Re}\left\{ \vec{E}( \vec{r}, \omega_0 ) \times
@@ -50,7 +57,10 @@ Valor medio:
 \[ = \frac{1}{2} \vec{H_0} \vec{H_0^*} \operatorname{Re}\left( \eta^* \right)
 e^{-2 \alpha z} \hat{z} \]
 
-En el dominio de la frecuencia:
+\subsubsection{En el dominio de la frecuencia}
+\label{ssub:en_el_dominio_de_la_frecuencia}
+
+Parte real:
 
 \[ \frac{1}{2} \operatorname{Re}\left\{ \int_V - \vec{J_{c}^*} \cdot
 \vec{E_c} \cdot dV \right\} = \]
@@ -59,6 +69,14 @@ En el dominio de la frecuencia:
 \[ + \frac{\omega_0 \varepsilon^{\prime\prime}}{2} \int_V | \vec{E_c} |^2 dV \]
 \[ + \frac{\omega_0 \mu^{\prime\prime}}{2} \int_V | \vec{H_c} |^2 dV \]
 \[ + \frac{\sigma}{2} \int_V | \vec{E_c} |^2 dV \]
+
+Parte imaginaria:
+
+\[ \frac{1}{2} \operatorname{Im}\left\{ \int_V - \vec{J_{c}^*} \cdot
+\vec{E_c} \cdot dV \right\} = \]
+\[ = \frac{1}{2} \operatorname{Im}\left\{ \oint_S \left(\vec{E_{c}} \cdot
+\vec{H_c^*} \right) \vec{dS} \right\} \] 
+\[ +2\omega_0 [<w_m>-<w_e>] \]
 
 \subsection{Campo Máximo}
 \label{sub:campo_maximo}
@@ -70,11 +88,15 @@ En el dominio de la frecuencia:
 
 \begin{itemize}
 		\item \textbf{Lineal} si:
-				$ E_{u1} $ ó $ E_{u2} \, = \, 0$.
+				\begin{itemize}
+						\item $ E_{u1} $ ó $ E_{u2} \, = \, 0$
+						\item $ \vec{E_{0r}} = \vec{E_{0i}} $ 
+						
+				\end{itemize}
 		\item \textbf{Circular} si:
 				\begin{itemize}
 						\item $ E_{u1} = E_{u2} $ 
-						\item $ |\vec{E_{0r}}| = |\vec{E_{0i}}| $ y $ |\vec{E_{0r}}| \perp |\vec{E_{0i}}| $ 
+						\item $ |\vec{E_{0r}}| = |\vec{E_{0i}}| $ y $ \vec{E_{0r}} \perp \vec{E_{0i}} $ 
 				\end{itemize}
 		\item \textbf{Elíptica}:
 				En el resto de situaciones.
@@ -110,6 +132,34 @@ Mirando en la dirección de propagación, la polarización será:
 \[ R.O.E. = S = \frac{\left| \vec{E_{total}} \right|_{max}}{\left|
 \vec{E_{total}} \right|_{min}} \]
 \[ = \frac{1+|\rho|}{1-|\rho|}  \]
+
+\section{Relaciones constitutivas}
+\label{sec:relaciones_constitutivas}
+
+\[ \vec{D} (\vec{r}, t) = \int_{V^{\prime}} \int_{t^{\prime}=-\infty}^{t}
+\varepsilon (\vec{r}, \vec{r^{\prime\prime}}, t-t^{\prime})
+\vec{E} (\vec{r}, t^{\prime}) dt^{\prime} dV^{\prime}
+\quad \left[\frac{C}{m^2} \right] \]
+
+Si $ \varepsilon^{\prime\prime} > 0 $, la permitividad depende de la
+frecuencia.
+
+\section{Condiciones de contorno}
+\label{sec:condiciones_de_contorno}
+
+\subsection{Campo eléctrico}
+\label{sub:campo_electrico}
+
+Si $ \sigma = \infty $:
+
+\[ \hat{n_{12}} \times ( \vec{E_2} - \vec{E_1} ) = 0 \]
+
+\subsection{Campo magnético}
+\label{sub:campo_magnetico}
+
+Si $ \sigma = \infty $:
+
+\[ \hat{n_{12}} \cdot ( \vec{B_2} - \vec{B_1} ) = 0 \]
 
 
 \end{document}
