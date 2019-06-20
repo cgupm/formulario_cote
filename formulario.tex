@@ -117,29 +117,14 @@ Mirando en la dirección de propagación, la polarización será:
 \[ \hat{n} \cdot \left( \vec{E_r} \times \vec{E_i} \right) \leq 0
 \rightarrow \mbox{positiva (a derechas)}. \]
 
-\section{Incidencia de O.P. sobre obstáculos}
-\label{sec:incidencia_de_o_p_sobre_obstaculos}
-
-\subsection{Coeficiente de reflexión}
-\label{sub:coeficiente_de_reflexion}
-
-\[ \rho (z) = \frac{\vec{E_{0 ref}} \cdot e^{+\gamma_1 z}}{\vec{E_{0 inc}}
-\cdot e^{-\gamma_1 z}} = \rho (z=0^+) \cdot e^{+2\gamma_1 z} \]
-
-\subsection{Coeficiente de onda estacionaria}
-\label{sub:coeficiente_de_onda_estacionaria}
-
-\[ R.O.E. = S = \frac{\left| \vec{E_{total}} \right|_{max}}{\left|
-\vec{E_{total}} \right|_{min}} \]
-\[ = \frac{1+|\rho|}{1-|\rho|}  \]
-
 \section{Relaciones constitutivas}
 \label{sec:relaciones_constitutivas}
 
-\[ \vec{D} (\vec{r}, t) = \int_{V^{\prime}} \int_{t^{\prime}=-\infty}^{t}
+\[ \vec{D} (\vec{r}, t) = \]
+\[ = \int_{V^{\prime}} \int_{t^{\prime}=-\infty}^{t}
 \varepsilon (\vec{r}, \vec{r^{\prime\prime}}, t-t^{\prime})
 \vec{E} (\vec{r}, t^{\prime}) dt^{\prime} dV^{\prime}
-\quad \left[\frac{C}{m^2} \right] \]
+\, \left[\frac{C}{m^2} \right] \]
 
 Si $ \varepsilon^{\prime\prime} > 0 $, la permitividad depende de la
 frecuencia.
@@ -160,6 +145,35 @@ Si $ \sigma = \infty $:
 Si $ \sigma = \infty $:
 
 \[ \hat{n_{12}} \cdot ( \vec{B_2} - \vec{B_1} ) = 0 \]
+
+\section{Incidencia de O.P. sobre obstáculos}
+\label{sec:incidencia_de_o_p_sobre_obstaculos}
+
+\[ w_{t} = w_{i} (1 - |\rho|) \]
+
+\subsection{Coeficiente de reflexión}
+\label{sub:coeficiente_de_reflexion}
+
+\[ \rho (z) = \frac{\vec{E_{0 ref}} \cdot e^{+\gamma_1 z}}{\vec{E_{0 inc}}
+\cdot e^{-\gamma_1 z}} = \rho (z=0^+) \cdot e^{+2\gamma_1 z} \]
+
+\[ \rho_{12} = \frac{z_{12} - \eta_1}{z_{12} + \eta_1} \]
+
+\[ E_{\max} = E_{i_{\max}} (1 + |\rho|) \]
+
+\subsection{Impedancia}
+\label{sub:impedancia}
+
+\[ z_{12} = \eta_2
+\frac{z_{23} \cos{(\beta d_2)} + j \eta_2 \sen{(\beta d_2)}}
+{\eta_2 \cos{(\beta d_2)} + j z_{23} \sen{(\beta d_2)}} \]
+
+\subsection{Coeficiente de onda estacionaria}
+\label{sub:coeficiente_de_onda_estacionaria}
+
+\[ R.O.E. = S = \frac{\left| \vec{E_{total}} \right|_{\max}}{\left|
+\vec{E_{total}} \right|_{min}} \]
+\[ = \frac{1+|\rho|}{1-|\rho|}  \]
 
 
 \end{document}
