@@ -175,5 +175,55 @@ Si $ \sigma = \infty $:
 \vec{E_{total}} \right|_{min}} \]
 \[ = \frac{1+|\rho|}{1-|\rho|}  \]
 
+\section{Líneas de transmisión}
+\label{sec:lineas_de_transmision}
+
+\subsection{Cálculo de $ \vec{E} $ y $ \vec{H} $}
+\label{sub:calculo_de_E_y_H}
+
+\[ \vec{E} = (- \nabla_t \phi) e^{- \gamma_0 n} \quad \left[ \frac{V}{m} \right] \]
+
+Constante de propagación del modo TEM:
+
+\[ \gamma_0 = j \omega_0 \sqrt{\mu \varepsilon} \quad [m^{-1}] \]
+
+\subsubsection{Diferencia de potencial}
+\label{ssub:diferencia_de_potencial}
+
+\[ V_0 = \phi_1 - \phi_2 \quad [V] \]
+
+\[V_0 = - \int_{c_{2}}^{c_{1}} \vec{E} \cdot \vec{dl} \quad [V] \]
+
+\subsection{Parámetros primarios}
+\label{sub:parametros_primarios}
+
+\[ V(z) = V_0 e^{- \gamma_0 n} \quad [V] \]
+\[ I(z) = I_0 e^{- \gamma_0 n} \quad [A] \]
+
+\subsubsection{Corriente}
+\label{ssub:corriente}
+
+\[ \vec{J_s} = \hat{n}_{saliente} \times \vec{H} \quad \left[\frac{A}{m}\right] \]
+
+\[ I_0 = \int_L \vec{J_s} \cdot dl \quad [A] \]
+
+\subsection{Parámetros secundarios}
+\label{sub:parametros_secundarios}
+
+\[ k_g f \frac{Z_0}{\eta} \]
+
+\[ L_{int} = \mu k_g \quad \left[ \frac{H}{m} \right] \]
+
+\[ L = L_{int} + L_{ext} \]
+
+\[ C = \frac{\varepsilon^{\prime}}{k_g} \quad \left[ \frac{F}{m} \right] \]
+
+\[ G = \frac{\omega \varepsilon^{\prime\prime}}{k_g} \quad \left[ \frac{S}{m} \right] \]
+
+Con $ \varepsilon = \varepsilon^{\prime} -j\varepsilon^{\prime\prime} $.
+
+\[ Z_0 = \sqrt{\frac{j \omega L}{G + j \omega C}} \quad [\Omega] \]
+
+\[ \gamma_0 =  \sqrt{j \omega L (G + j \omega C )} \]
 
 \end{document}
