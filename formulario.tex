@@ -210,9 +210,9 @@ Constante de propagación del modo TEM:
 \subsection{Parámetros secundarios}
 \label{sub:parametros_secundarios}
 
-\[ k_g f \frac{Z_0}{\eta} \]
+\[ k_g = \frac{Z_0}{\eta} \]
 
-\[ L_{int} = \mu k_g \quad \left[ \frac{H}{m} \right] \]
+\[ L_{ext} = \mu k_g \quad \left[ \frac{H}{m} \right] \]
 
 \[ L = L_{int} + L_{ext} \]
 
@@ -220,10 +220,42 @@ Constante de propagación del modo TEM:
 
 \[ G = \frac{\omega \varepsilon^{\prime\prime}}{k_g} \quad \left[ \frac{S}{m} \right] \]
 
+\[ R \left[ \frac{\Omega}{m} \right] \]
+
 Con $ \varepsilon = \varepsilon^{\prime} -j\varepsilon^{\prime\prime} $.
 
-\[ Z_0 = \sqrt{\frac{j \omega L}{G + j \omega C}} \quad [\Omega] \]
+\[ Z_0 = \sqrt{\frac{R + j \omega L}{G + j \omega C}} \quad [\Omega] \]
 
 \[ \gamma_0 =  \sqrt{j \omega L (G + j \omega C )} \]
+
+\subsection{Condiciones de Leontovich}
+\label{sub:condiciones_de_leontovich}
+
+Si se está a alta frecuencia.
+
+\[ R \ll |j \omega  L| \]
+
+\subsection{Atenuación}
+\label{sub:atenuacion}
+
+\subsubsection{Profundidad de penetración}
+\label{ssub:profundidad_de_penetracion}
+
+\[ \delta = \frac{1}{\sqrt{\pi f_0 \mu \sigma}} \quad [m] \]
+
+\[ \alpha_c = \frac{W_{pc}}{2 W_T} \quad \left[ \frac{Np}{m} \right] \]
+
+\[ R = 2 \alpha_c \sqrt{\frac{L}{C}} \quad \left[ \frac{\Omega}{m} \right] \]
+
+\[ \gamma_c = \alpha_c + \gamma_0 \]
+
+\subsubsection{Pérdidas eléctricas}
+\label{ssub:perdidas_electricas}
+
+\[ \tg{\delta} = \frac{\varepsilon^{\prime\prime} + \frac{\sigma_0}{\omega_0}}{\varepsilon^{\prime}} \]
+
+Bajas pérdidas:
+
+\[ \tg{\delta} \ll 1 \]
 
 \end{document}
