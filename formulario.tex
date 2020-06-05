@@ -20,33 +20,19 @@
 
 \twocolumn
 
-\section{OPH}
-\label{sec:ondas_planas_homogeneas}
+\section{Tema 1: Introducción a la Electrodinámica. Transferencia de Energía Electromagnética.}
 
-Condición: $ \vec{E} \cdot \hat{n} = 0 $ y $ \vec{H} \cdot \hat{n} = 0 $.
-
-\[ \lambda = \frac{2 \pi}{\beta}; \quad v_f = \frac{\omega_0}{\beta}  =
-\frac{1}{\sqrt{\mu \varepsilon}} \]
-
-\[ c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}} \]
-
-\[ \gamma_0 = \sqrt{-\omega^2 \mu \varepsilon} = \alpha + j \beta \]
-
-\[ \vec{H_0} = \frac{\hat{n} \times \vec{E_0}}{\eta} \]
-
-\[ \eta = \frac{j \omega \mu}{\gamma_0} = \sqrt{\frac{\mu}{\varepsilon}} \]
-
-\subsection{Poynting}
+\subsection{Poynting.}
 \label{sub:poynting}
 
-\subsubsection{Vector de Poynting instantáneo}
+\subsubsection{Vector de Poynting instantáneo.}
 \label{ssub:vector_de_poynting_instantaneo}
 
 
 \[ \vec{S} ( \vec{r}, t ) = \vec{E} ( \vec{r}, t ) \times \vec{H} ( \vec{r}, t
 ) \]
 
-\subsubsection{Valor medio}
+\subsubsection{Valor medio.}
 \label{ssub:valor_medio}
 
 \[ \left< \vec{S} ( \vec{r}, t ) \right> \]
@@ -57,7 +43,7 @@ Condición: $ \vec{E} \cdot \hat{n} = 0 $ y $ \vec{H} \cdot \hat{n} = 0 $.
 \[ = \frac{1}{2} \vec{H_0} \vec{H_0^*} \operatorname{Re}\left( \eta^* \right)
 e^{-2 \alpha z} \hat{z} \]
 
-\subsubsection{En el dominio de la frecuencia}
+\subsubsection{En el dominio de la frecuencia.}
 \label{ssub:en_el_dominio_de_la_frecuencia}
 
 Parte real:
@@ -78,19 +64,62 @@ Parte imaginaria:
 \vec{H_c^*} \right) \vec{dS} \right\} \] 
 \[ +2\omega_0 [<w_m>-<w_e>] \]
 
-\subsection{Campo Máximo}
-\label{sub:campo_maximo}
+\subsection{Relaciones constitutivas.}
+
+\[ \vec{D} (\vec{r}, t) = \]
+\[ = \int_{V^{\prime}} \int_{t^{\prime}=-\infty}^{t}
+\varepsilon (\vec{r}, \vec{r^{\prime\prime}}, t-t^{\prime})
+\vec{E} (\vec{r}, t^{\prime}) dt^{\prime} dV^{\prime}
+\, \left[\frac{C}{m^2} \right] \]
+
+Si $ \varepsilon^{\prime\prime} > 0 $, la permitividad depende de la
+frecuencia.
+
+\subsection{Condiciones de contorno.}
+
+\subsubsection{Campo eléctrico}
+
+Si $ \sigma = \infty $:
+
+\[ \hat{n_{12}} \times ( \vec{E_2} - \vec{E_1} ) = 0 \]
+
+\subsubsection{Campo magnético}
+
+Si $ \sigma = \infty $:
+
+\[ \hat{n_{12}} \cdot ( \vec{B_2} - \vec{B_1} ) = 0 \]
+
+
+\section{Tema 2: Ondas Planas Homogéneas. Polarización.}
+
+\subsection{Ondas Planas Homogéneas (OPH).}
+
+Condición: $ \vec{E} \cdot \hat{n} = 0 $ y $ \vec{H} \cdot \hat{n} = 0 $.
+
+\[ \lambda = \frac{2 \pi}{\beta}; \quad v_f = \frac{\omega_0}{\beta}  =
+\frac{1}{\sqrt{\mu \varepsilon}} \]
+
+\[ c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}} \]
+
+\[ \gamma_0 = \sqrt{-\omega^2 \mu \varepsilon} = \alpha + j \beta \]
+
+\[ \vec{H_0} = \frac{\hat{n} \times \vec{E_0}}{\eta} \]
+
+\[ \eta = \frac{j \omega \mu}{\gamma_0} = \sqrt{\frac{\mu}{\varepsilon}} \]
+
+\subsection{Campo máximo.}
 
 \[ \max{\left(|E_r|, |E_i|\right)} \]
 
-\subsection{Polarización}
+\subsection{Polarización.}
 \label{sub:polarizacion}
 
 \begin{itemize}
 		\item \textbf{Lineal} si:
 				\begin{itemize}
 						\item $ E_{u1} $ ó $ E_{u2} \, = \, 0$
-						\item $ \vec{E_{0r}} = \vec{E_{0i}} $ 
+                        \item $ \vec{E_{0r}} = \vec{E_{0i}} \, \mbox{(o
+                            proporcional)} $ 
 						
 				\end{itemize}
 		\item \textbf{Circular} si:
@@ -102,12 +131,21 @@ Parte imaginaria:
 				En el resto de situaciones.
 \end{itemize}
 
-\subsubsection{Relación axial}
+\subsubsection{Relación axial.}
 \label{ssub:relacion_axial}
 
-\[ r = \frac{E_{semieje mayor}}{E_{semieje menor}} \] 
+\[ r = \frac{E_{semieje mayor}}{E_{semieje menor}} = \max{\left(
+\frac{|E_{u1}|}{|E_{u2}|}, \frac{|E_{u2}|}{|E_{u1}|} \right)} \] 
 
-\subsubsection{Sentido de polarización}
+La polarización en función de $r$ es:
+
+\begin{itemize}
+    \item $r=1$: Circular.
+    \item $r=\infty$: Lineal.
+    \item $1<r<\infty$: Elíptica.
+\end{itemize}
+
+\subsubsection{Sentido de polarización.}
 \label{ssub:sentido_de_polarizacion}
 
 Mirando en la dirección de propagación, la polarización será:
@@ -117,41 +155,11 @@ Mirando en la dirección de propagación, la polarización será:
 \[ \hat{n} \cdot \left( \vec{E_r} \times \vec{E_i} \right) \leq 0
 \rightarrow \mbox{positiva (a derechas)}. \]
 
-\section{Relaciones constitutivas}
-\label{sec:relaciones_constitutivas}
-
-\[ \vec{D} (\vec{r}, t) = \]
-\[ = \int_{V^{\prime}} \int_{t^{\prime}=-\infty}^{t}
-\varepsilon (\vec{r}, \vec{r^{\prime\prime}}, t-t^{\prime})
-\vec{E} (\vec{r}, t^{\prime}) dt^{\prime} dV^{\prime}
-\, \left[\frac{C}{m^2} \right] \]
-
-Si $ \varepsilon^{\prime\prime} > 0 $, la permitividad depende de la
-frecuencia.
-
-\section{Condiciones de contorno}
-\label{sec:condiciones_de_contorno}
-
-\subsection{Campo eléctrico}
-\label{sub:campo_electrico}
-
-Si $ \sigma = \infty $:
-
-\[ \hat{n_{12}} \times ( \vec{E_2} - \vec{E_1} ) = 0 \]
-
-\subsection{Campo magnético}
-\label{sub:campo_magnetico}
-
-Si $ \sigma = \infty $:
-
-\[ \hat{n_{12}} \cdot ( \vec{B_2} - \vec{B_1} ) = 0 \]
-
-\section{Incidencia de O.P. sobre obstáculos}
-\label{sec:incidencia_de_o_p_sobre_obstaculos}
+\section{Tema 3: Incidencia normal de O.P.H..}
 
 \[ w_{t} = w_{i} (1 - |\rho|) \]
 
-\subsection{Coeficiente de reflexión}
+\subsection{Coeficiente de reflexión.}
 \label{sub:coeficiente_de_reflexion}
 
 \[ \rho (z) = \frac{\vec{E_{0 ref}} \cdot e^{+\gamma_1 z}}{\vec{E_{0 inc}}
@@ -161,21 +169,30 @@ Si $ \sigma = \infty $:
 
 \[ E_{\max} = E_{i_{\max}} (1 + |\rho|) \]
 
-\subsection{Impedancia}
+\subsection{Impedancia.}
 \label{sub:impedancia}
 
 \[ z_{12} = \eta_2
 \frac{z_{23} \cos{(\beta d_2)} + j \eta_2 \sen{(\beta d_2)}}
 {\eta_2 \cos{(\beta d_2)} + j z_{23} \sen{(\beta d_2)}} \]
 
-\subsection{Coeficiente de onda estacionaria}
+\subsection{Coeficiente de onda estacionaria.}
 \label{sub:coeficiente_de_onda_estacionaria}
 
-\[ R.O.E. = S = \frac{\left| \vec{E_{total}} \right|_{\max}}{\left|
+\[ C.O.E. = S = \frac{\left| \vec{E_{total}} \right|_{\max}}{\left|
 \vec{E_{total}} \right|_{min}} \]
 \[ = \frac{1+|\rho|}{1-|\rho|}  \]
 
-\section{Líneas de transmisión}
+\section{Tema 4: Campos conductores. Efecto pelicular.}
+
+\subsection{Condiciones de Leontovich.}
+\label{sub:condiciones_de_leontovich}
+
+Si se está a alta frecuencia.
+
+\[ R \ll |j \omega  L| \]
+
+\section{Tema 5: Líneas de transmisión.}
 \label{sec:lineas_de_transmision}
 
 \subsection{Cálculo de $ \vec{E} $ y $ \vec{H} $}
@@ -187,34 +204,34 @@ Constante de propagación del modo TEM:
 
 \[ \gamma_0 = j \omega_0 \sqrt{\mu \varepsilon} \quad [m^{-1}] \]
 
-\subsubsection{Diferencia de potencial}
+\subsubsection{Diferencia de potencial.}
 \label{ssub:diferencia_de_potencial}
 
 \[ V_0 = \phi_1 - \phi_2 \quad [V] \]
 
 \[V_0 = - \int_{c_{2}}^{c_{1}} \vec{E} \cdot \vec{dl} \quad [V] \]
 
-\subsubsection{Cable coaxial}
+\subsubsection{Cable coaxial.}
 \label{ssub:cable_coaxial}
 
 \[ \phi (r,\varphi) = A \ln{r} +B \quad a \leq r \leq b \]
 
 \[ Z_0 = \eta \frac{\ln{\frac{b}{a}}}{2\pi} \]
 
-\subsection{Parámetros primarios}
+\subsection{Parámetros primarios.}
 \label{sub:parametros_primarios}
 
 \[ V(z) = V_0 e^{- \gamma_0 n} \quad [V] \]
 \[ I(z) = I_0 e^{- \gamma_0 n} \quad [A] \]
 
-\subsubsection{Corriente}
+\subsubsection{Corriente.}
 \label{ssub:corriente}
 
 \[ \vec{J_s} = \hat{n}_{saliente} \times \vec{H} \quad \left[\frac{A}{m}\right] \]
 
 \[ I_0 = \int_L \vec{J_s} \cdot dl \quad [A] \]
 
-\subsection{Parámetros secundarios}
+\subsection{Parámetros secundarios.}
 \label{sub:parametros_secundarios}
 
 \[ k_g = \frac{Z_0}{\eta} \]
@@ -235,17 +252,10 @@ Con $ \varepsilon = \varepsilon^{\prime} -j\varepsilon^{\prime\prime} $.
 
 \[ \gamma_0 =  \sqrt{j \omega L (G + j \omega C )} \]
 
-\subsection{Condiciones de Leontovich}
-\label{sub:condiciones_de_leontovich}
-
-Si se está a alta frecuencia.
-
-\[ R \ll |j \omega  L| \]
-
-\subsection{Atenuación}
+\subsection{Atenuación.}
 \label{sub:atenuacion}
 
-\subsubsection{Profundidad de penetración}
+\subsubsection{Profundidad de penetración.}
 \label{ssub:profundidad_de_penetracion}
 
 \[ \delta = \frac{1}{\sqrt{\pi f_0 \mu \sigma}} \quad [m] \]
@@ -256,7 +266,7 @@ Si se está a alta frecuencia.
 
 \[ \gamma_c = \alpha_c + \gamma_0 \]
 
-\subsubsection{Pérdidas eléctricas}
+\subsubsection{Pérdidas eléctricas.}
 \label{ssub:perdidas_electricas}
 
 \[ \tg{\delta} = \frac{\varepsilon^{\prime\prime} + \frac{\sigma_0}{\omega_0}}{\varepsilon^{\prime}} \]
