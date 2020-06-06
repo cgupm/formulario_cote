@@ -94,6 +94,8 @@ Si $ \sigma = \infty $:
 
 \subsection{Ondas Planas Homogéneas (OPH).}
 
+\[ \vec{E} = \vec{E_0} e^{-\gamma \hat{n} \vec{r}} \]
+
 Condición: $ \vec{E} \cdot \hat{n} = 0 $ y $ \vec{H} \cdot \hat{n} = 0 $.
 
 \[ \lambda = \frac{2 \pi}{\beta}; \quad v_f = \frac{\omega_0}{\beta}  =
@@ -167,7 +169,9 @@ Mirando en la dirección de propagación, la polarización será:
 
 \[ \rho_{12} = \frac{z_{12} - \eta_1}{z_{12} + \eta_1} \]
 
-\[ E_{\max} = E_{i_{\max}} (1 + |\rho|) \]
+\[ |E_{\max}| = E_{i_{\max}} (1 + |\rho|) \]
+
+\[ |\rho| = \frac{S-1}{S+1} \] 
 
 \subsection{Impedancia.}
 \label{sub:impedancia}
@@ -218,6 +222,14 @@ Constante de propagación del modo TEM:
 
 \[ Z_0 = \eta \frac{\ln{\frac{b}{a}}}{2\pi} \]
 
+\subsubsection{Hilo cilíndrico}%
+\label{ssub:hilo_cilindrico}
+
+\[ Z_{hilo\_cilindrico} = \frac{1+j}{\sigma \delta} \frac{1}{2 \pi r_0} \]
+
+Por almacenamiento de energía magnética y pérdidas por efecto Joule en el
+conductor.
+
 \subsection{Parámetros primarios.}
 \label{sub:parametros_primarios}
 
@@ -230,6 +242,8 @@ Constante de propagación del modo TEM:
 \[ \vec{J_s} = \hat{n}_{saliente} \times \vec{H} \quad \left[\frac{A}{m}\right] \]
 
 \[ I_0 = \int_L \vec{J_s} \cdot dl \quad [A] \]
+
+\[ I_0 = \frac{1}{\eta} \oint_C \nabla_t \phi \cdot \hat{n} \cdot dl \quad [A] \]
 
 \subsection{Parámetros secundarios.}
 \label{sub:parametros_secundarios}
